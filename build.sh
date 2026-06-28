@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t registry.stackbleed.net/sqlite-backup:latest .
+docker build -t registry.stackbleed.net/sqbkp:latest .
