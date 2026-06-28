@@ -3,3 +3,5 @@ backup
 build.sh
 Dockerfile
 compose.yml
+LICENSE
+example.env
