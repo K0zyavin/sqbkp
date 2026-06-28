@@ -1,6 +1,6 @@
 FROM debian:latest
 RUN apt-get update \
-	&& apt-get install -y cron curl unzip openssh-client \
+	&& apt-get install -y curl unzip openssh-client \
 	&& rm -rf /var/lib/apt/lists/*
 
 #Install supercronic and sqlite3 tools
