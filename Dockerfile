@@ -24,7 +24,8 @@ RUN curl -fsSLO "$SUPERCRONIC_URL" \
 WORKDIR /app
 COPY . .
 
-RUN useradd appuser && mkdir /home/appuser
+RUN groupadd -g 123 appuser \
+ && useradd appuser -ms /bin/bash -g 123 -u 123
 USER appuser
 
 CMD ["supercronic", "crontab"] 
