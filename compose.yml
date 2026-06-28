@@ -1,6 +1,6 @@
 services:
-  sqlite-backup:
-    image: registry.stackbleed.net/sqlite-backup:latest
+  sqbkp:
+    image: registry.stackbleed.net/sqbkp:latest
     environment:
       REMOTE: ${REMOTE}
       REMOTE_PATH: ${REMOTE_PATH}
