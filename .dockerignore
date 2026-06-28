@@ -1,0 +1,5 @@
+.env
+backup
+build.sh
+Dockerfile
+compose.yml
