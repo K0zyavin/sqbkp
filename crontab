@@ -1,0 +1,2 @@
+ #Trigger the backup. set to run daily @ 7AM
+0 7 * * * /app/task.sh

@@ -1,0 +1,10 @@
+services:
+  sqlite-backup:
+    image: registry.stackbleed.net/sqlite-backup:latest
+    environment:
+      REMOTE: ${REMOTE}
+      REMOTE_PATH: ${REMOTE_PATH}
+      TZ: ${TIME_ZONE} 
+    volumes:
+      - ${SSH_DIRECTORY}:/home/appuser/.ssh:ro
+      - ${BACKUP_DIRECTORY}:/backup
